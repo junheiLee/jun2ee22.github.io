@@ -11,6 +11,6 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "검색"
-    url: /search/
+    url: /_layouts/search/
   - title: "카테고리"
-    url: /categories/
+    url: /_layouts/categories/
