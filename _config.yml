@@ -20,13 +20,13 @@ title                    : "나의 개발 일지"
 title_separator          : "-"
 subtitle                 : "쇼콜라끼삐또리"
 name                     : "강동희"
-description              : "My Blog"
+description              : "제가 배운 내용, 느낀 점들, 소소한 일상을 적고 싶은 공간입니다."
 url                      : "https://chocolaggibbiddori.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chocolaggibbiddori/chocolaggibbiddori.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/88x88.png"
+masthead_title           : "My Blog"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
