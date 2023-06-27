@@ -25,7 +25,7 @@ url                      : "https://chocolaggibbiddori.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "chocolaggibbiddori/chocolaggibbiddori.github.io"
 teaser                   : # "/assets/images/500x300.png"
-logo                     : "../docs/assets/images/apple-touch-icon-precomposed.png"
+logo                     : # "../docs/assets/images/apple-touch-icon-precomposed.png"
 masthead_title           : "My Blog"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
