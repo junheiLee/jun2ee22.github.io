@@ -461,47 +461,47 @@ public class MemberDto {
 
 - ##### 출력
 
-![selectAll()](../images/7:5/selectAll().png)
+![selectAll()](/images/7:5/selectAll().png)
 
 #### 2. 성별이 기타인 사람 성별 수정
 
 - ##### 출력
 
-![updateCGender()](../images/7:5/updateCGender().png)
+![updateCGender()](/images/7:5/updateCGender().png)
 
 - ##### 변경 결과(DB)
 
-|                 변경 전                  |                                  변경 후                                   |
-|:-------------------------------------:|:-----------------------------------------------------------------------:|
-| ![DB init](../images/7:5/DB init.png) | ![DB after updateCGender()](../images/7:5/DB after updateCGender().png) |
+|                변경 전                 |                                 변경 후                                  |
+|:-----------------------------------:|:---------------------------------------------------------------------:|
+| ![DB init](/images/7:5/DB init.png) | ![DB after updateCGender()](/images/7:5/DB after updateCGender().png) |
 
 #### 3. 멤버 추가
 
 - ##### 출력
 
-![insert()](../images/7:5/insert().png)
+![insert()](/images/7:5/insert().png)
 
 - ##### 변경 결과(DB)
 
-![DB after insert()](../images/7:5/DB after insert().png)
+![DB after insert()](/images/7:5/DB after insert().png)
 
 #### 4. 평균 방문횟수 보다 많이 방문한 사람 명단 조회
 
 - ##### 출력
 
-![findOverVisitAvg()](../images/7:5/findOverVisitAvg().png)
+![findOverVisitAvg()](/images/7:5/findOverVisitAvg().png)
 
 #### 5. 나이가 비공개인 사람들의 방문 횟수 조회
 
 - ##### 출력
 
-![selectAgePrivateMember()](../images/7:5/selectAgePrivateMember().png)
+![selectAgePrivateMember()](/images/7:5/selectAgePrivateMember().png)
 
 #### 6. 작업 종료
 
 - ##### 출력
 
-![shutdown](../images/7:5/shutdown.png)
+![shutdown](/images/7:5/shutdown.png)
 
 <br>
 
