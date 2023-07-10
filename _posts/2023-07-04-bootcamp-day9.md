@@ -517,4 +517,4 @@ public class MySQLConnector {
 - 중복이 너무 많다고 느꼈다. 나중에 이를 해결할 기술을 배울까? 궁금했다.
 
 ---
-[<== 부트캠프 8일차](../bootcamp-day8.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 10일차 ==>](../bootcamp-day10.md)
+[<== 부트캠프 8일차](../bootcamp-day8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 10일차 ==>](../bootcamp-day10)

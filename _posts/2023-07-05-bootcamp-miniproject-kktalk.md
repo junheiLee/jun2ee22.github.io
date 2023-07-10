@@ -112,4 +112,4 @@ title: "부트캠프 미니 프로젝트 kktalk"
     + ERROR 1064 (42000) : 테이블 생성 시 한 컬럼에 타입을 지정해주지 않아 발생한 에러
 
 ---
-[<== 부트캠프 10일차](../bootcamp-day10.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 14일차 ==>](../bootcamp-day11.md)
+[<== 부트캠프 10일차](../bootcamp-day10) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 14일차 ==>](../bootcamp-day11)
