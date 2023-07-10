@@ -1,7 +1,6 @@
 ---
 layout: single
 title: "부트캠프 10일차"
-root-url: ../
 ---
 
 ### 실습 코드
