@@ -488,26 +488,26 @@ public class MySQLConnector {
 
 > selectAll()
 
-![selectAll()](../images/7:4/selectAll().png)
+![selectAll()](/images/7:4/selectAll().png)
 
 > insert()
 
-![insert()](../images/7:4/insert().png)
-![DB after insert()](../images/7:4/DB after insert().png)
+![insert()](/images/7:4/insert().png)
+![DB after insert()](/images/7:4/DB after insert().png)
 
 > incrementAllSale()
 
-![incrementAllSale()](../images/7:4/incrementAllSale().png)
-![DB after incrementAllSale()](../images/7:4/DB after incrementAllSale().png)
+![incrementAllSale()](/images/7:4/incrementAllSale().png)
+![DB after incrementAllSale()](/images/7:4/DB after incrementAllSale().png)
 
 > delete()
 
-![delete()](../images/7:4/delete().png)
-![DB after delete()](../images/7:4/DB after delete().png)
+![delete()](/images/7:4/delete().png)
+![DB after delete()](/images/7:4/DB after delete().png)
 
 > shutdown
 
-![shutdown](../images/7:4/shutdown.png)
+![shutdown](/images/7:4/shutdown.png)
 
 
 <br>
@@ -516,3 +516,6 @@ public class MySQLConnector {
 
 - 이전에 이미 학습했었던 JDBC였지만 역시나 까먹은 나..!! 그래도 한 번 써봤던 경험이 있어서 기술을 적용하기 쉬웠다.
 - 중복이 너무 많다고 느꼈다. 나중에 이를 해결할 기술을 배울까? 궁금했다.
+
+---
+[<== 부트캠프 8일차](2023-07-03-bootcamp-day8.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 10일차 ==>](2023-07-05-bootcamp-day10.md)
