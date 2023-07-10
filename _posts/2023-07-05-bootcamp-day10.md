@@ -513,4 +513,4 @@ public class MemberDto {
 &nbsp;&nbsp; 사전에 협의되지 않는 코드들은 합치는 데에 불필요한 작업이 많이 들어간다는 것을 몸소 체험했다! 다음에 협업을 할 때에는 충분한 토의를 거친 후에 진행하는 것이 좋겠다고 생각했다.
 
 ---
-[<== 부트캠프 9일차](2023-07-04-bootcamp-day9.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 11일차 ==>](2023-07-05-bootcamp-miniproject-kktalk.md)
+[<== 부트캠프 9일차](../bootcamp-day9.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 11일차 ==>](../bootcamp-miniproject-kktalk.md)
