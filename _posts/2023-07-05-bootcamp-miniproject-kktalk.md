@@ -3,15 +3,12 @@ layout: single
 title: "부트캠프 미니 프로젝트 kktalk"
 ---
 
-부트캠프 미니 프로젝트 kktalk 개발
-===
-
 나만의 메신저 만들기
 ---
 
 <br>
 
-> **깃허브 주소** : https://github.com/chocolaggibbiddori/bootcamp-project-kktalk
+> **깃허브 주소** : [https://github.com/chocolaggibbiddori/bootcamp-project-kktalk](https://github.com/chocolaggibbiddori/bootcamp-project-kktalk)
 
 ---
 
@@ -69,7 +66,7 @@ title: "부트캠프 미니 프로젝트 kktalk"
 
 &nbsp;&nbsp; DB 테이블은 다음과 같이 선언하였다.
 
-![tables](images/kktalk/tables.png)
+![tables](/images/kktalk/tables.png)
 
 - friend : 유저 별 친구 목록이 담긴 테이블
 - login : 가입되어 있는 아이디와 비밀번호가 담긴 테이블
@@ -91,13 +88,13 @@ title: "부트캠프 미니 프로젝트 kktalk"
 
 ## 결과
 
-![init](images/kktalk/초기 화면.png)
+![init](/images/kktalk/초기 화면.png)
 
-![login-fail](images/kktalk/로그인 실패.png)
+![login-fail](/images/kktalk/로그인 실패.png)
 
-![login-success](images/kktalk/로그인 성공.png)
+![login-success](/images/kktalk/로그인 성공.png)
 
-![friends](images/kktalk/친구 리스트 화면.png)
+![friends](/images/kktalk/친구 리스트 화면.png)
 
 ### 느낀 점
 
