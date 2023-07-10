@@ -23,7 +23,7 @@ title: "부트캠프 10일차"
 
 &nbsp;&nbsp; 데이터베이스는 다음과 같이 초기화 되어있다.
 
-![DB init](../images/7:5/DB init.png)
+![DB init](/images/7:5/DB init.png)
 
 &nbsp;&nbsp; 프로젝트는 전체적인 틀과 비교적 쉬운 1, 5, 6번 메뉴는 내가 담당하기로 하고 각자 한 메뉴씩 담당해서 취합하는 것으로 진행되었다.
 
