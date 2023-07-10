@@ -1,15 +1,8 @@
 ---
 layout: single
 title: "부트캠프 10일차"
+root-url: ../
 ---
-
-<!-- Complete! -->
-
-## 목차
-
-[TOC]
-
-<br>
 
 ### 실습 코드
 
