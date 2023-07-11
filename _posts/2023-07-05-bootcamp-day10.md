@@ -16,7 +16,7 @@ typora-root-url: ../
 
 &nbsp;&nbsp; 데이터베이스는 다음과 같이 초기화 되어있다.
 
-![DB init](/images/7:5/DB init.png)
+![DB init](/images/day10/DB init.png)
 
 &nbsp;&nbsp; 프로젝트는 전체적인 틀과 비교적 쉬운 1, 5, 6번 메뉴는 내가 담당하기로 하고 각자 한 메뉴씩 담당해서 취합하는 것으로 진행되었다.
 
@@ -454,47 +454,47 @@ public class MemberDto {
 
 - ##### 출력
 
-![selectAll()](/images/7:5/selectAll().png)
+![selectAll()](/images/day10/selectAll().png)
 
 #### 2. 성별이 기타인 사람 성별 수정
 
 - ##### 출력
 
-![updateCGender()](/images/7:5/updateCGender().png)
+![updateCGender()](/images/day10/updateCGender().png)
 
 - ##### 변경 결과(DB)
 
 |                변경 전                 |                                 변경 후                                  |
 |:-----------------------------------:|:---------------------------------------------------------------------:|
-| ![DB init](/images/7:5/DB init.png) | ![DB after updateCGender()](/images/7:5/DB after updateCGender().png) |
+| ![DB init](/images/day10/DB init.png) | ![DB after updateCGender()](/images/day10/DB after updateCGender().png) |
 
 #### 3. 멤버 추가
 
 - ##### 출력
 
-![insert()](/images/7:5/insert().png)
+![insert()](/images/day10/insert().png)
 
 - ##### 변경 결과(DB)
 
-![DB after insert()](/images/7:5/DB after insert().png)
+![DB after insert()](/images/day10/DB after insert().png)
 
 #### 4. 평균 방문횟수 보다 많이 방문한 사람 명단 조회
 
 - ##### 출력
 
-![findOverVisitAvg()](/images/7:5/findOverVisitAvg().png)
+![findOverVisitAvg()](/images/day10/findOverVisitAvg().png)
 
 #### 5. 나이가 비공개인 사람들의 방문 횟수 조회
 
 - ##### 출력
 
-![selectAgePrivateMember()](/images/7:5/selectAgePrivateMember().png)
+![selectAgePrivateMember()](/images/day10/selectAgePrivateMember().png)
 
 #### 6. 작업 종료
 
 - ##### 출력
 
-![shutdown](/images/7:5/shutdown.png)
+![shutdown](/images/day10/shutdown.png)
 
 <br>
 

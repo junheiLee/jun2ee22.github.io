@@ -219,7 +219,7 @@ output
 
 해당 번호를 입력하면 각 메뉴에 알맞는 작업이 수행되게 하는 것이다. DB의 employee 테이블에는 다음과 같이 데이터가 저장되어 있다.
 
-![DB init](/images/7:4/DB init.png)
+![DB init](/images/day9/DB init.png)
 
 ### Main.class
 
@@ -488,26 +488,26 @@ public class MySQLConnector {
 
 > selectAll()
 
-![selectAll()](/images/7:4/selectAll().png)
+![selectAll()](/images/day9/selectAll().png)
 
 > insert()
 
-![insert()](/images/7:4/insert().png)
-![DB after insert()](/images/7:4/DB after insert().png)
+![insert()](/images/day9/insert().png)
+![DB after insert()](/images/day9/DB after insert().png)
 
 > incrementAllSale()
 
-![incrementAllSale()](/images/7:4/incrementAllSale().png)
-![DB after incrementAllSale()](/images/7:4/DB after incrementAllSale().png)
+![incrementAllSale()](/images/day9/incrementAllSale().png)
+![DB after incrementAllSale()](/images/day9/DB after incrementAllSale().png)
 
 > delete()
 
-![delete()](/images/7:4/delete().png)
-![DB after delete()](/images/7:4/DB after delete().png)
+![delete()](/images/day9/delete().png)
+![DB after delete()](/images/day9/DB after delete().png)
 
 > shutdown
 
-![shutdown](/images/7:4/shutdown.png)
+![shutdown](/images/day9/shutdown.png)
 
 <br>
 
