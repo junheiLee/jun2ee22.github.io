@@ -488,7 +488,7 @@ public class MySQLConnector {
 
 > selectAll()
 
-![selectAll()](/images/day9/selectAll().png)
+![selectAll()](./../images/day9/selectAll().png)
 
 > insert()
 
