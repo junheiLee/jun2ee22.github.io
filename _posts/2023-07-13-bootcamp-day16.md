@@ -39,17 +39,15 @@ title: "부트캠프 16일차"
 #### 게시판 조회(BoardList.jsp)
 
 - 받을 데이터
-  1. postList
+  - postList
+    - 타입 : List<PostListDto>
+    - 내용 : 게시판에 보여줄 게시글의 목록. 최대 10개이다.
 
-  - 타입 : List<PostListDto>
-  - 내용 : 게시판에 보여줄 게시글의 목록. 최대 10개이다.
+  - pageTotal[**추가**] // todo 번호 버그 수정
+    - 타입 : int
+    - 내용 : 전체 페이지의 수.
 
-  2. pageTotal[**추가**]
-
-  - 타입 : int
-  - 내용 : 전체 페이지의 수.
-
-  3. ~~pageNum~~
+  - ~~pageNum~~
 
 - 검색 버튼 : 누르면 해당 내용이 포함된 게시글을 검색함, BoardServlet 호출(action="board" method="get")
   - 보낼 데이터
@@ -87,35 +85,29 @@ title: "부트캠프 16일차"
 #### 게시글 상세 조회(PostDetail.jsp)
 
 - 받는 데이터
-  1. num
+  - num
+    - 타입 : int
+    - 내용 : 게시글의 글 번호
 
-  - 타입 : int
-  - 내용 : 게시글의 글 번호
+  - subject
+    - 타입 : String
+    - 내용 : 게시글의 제목
 
-  2. subject
+  - writer
+    - 타입 : String
+    - 내용 : 게시글의 제목
 
-  - 타입 : String
-  - 내용 : 게시글의 제목
+  - contents
+    - 타입 : String
+    - 내용 : 게시글의 내용
 
-  3. writer
+  - hit
+    - 타입 : int
+    - 내용 : 게시글의 조회수
 
-  - 타입 : String
-  - 내용 : 게시글의 제목
-
-  4. contents
-
-  - 타입 : String
-  - 내용 : 게시글의 내용
-
-  5. hit
-
-  - 타입 : int
-  - 내용 : 게시글의 조회수
-
-  6. reg_date
-
-  - 타입 : String
-  - 내용 : 게시글 등록 일시
+  - reg_date
+    - 타입 : String
+    - 내용 : 게시글 등록 일시
 
 - 목록 버튼 : 누르면 BoardServlet 호출(href="board?pageNum=1")
 
@@ -130,25 +122,21 @@ title: "부트캠프 16일차"
 #### 게시글 수정(PostModify.jsp)
 
 - 받는 데이터
-  1. num
+  - num
+    - 타입 : int
+    - 내용 : 게시글의 글 번호
 
-  - 타입 : int
-  - 내용 : 게시글의 글 번호
+  - subject
+    - 타입 : String
+    - 내용 : 게시글의 제목
 
-  2. subject
+  - writer
+    - 타입 : String
+    - 내용 : 게시글의 제목
 
-  - 타입 : String
-  - 내용 : 게시글의 제목
-
-  3. writer
-
-  - 타입 : String
-  - 내용 : 게시글의 제목
-
-  4. contents
-
-  - 타입 : String
-  - 내용 : 게시글의 내용
+  - contents
+    - 타입 : String
+    - 내용 : 게시글의 내용
 
 - 수정 버튼 : 누르면 PostModifyServlet 호출(method="post")
   - 보낼 데이터
@@ -163,48 +151,41 @@ title: "부트캠프 16일차"
 
 #### com.bestteam.servlet
 
-1. ~~IndexServlet("/")~~
+- ~~IndexServlet("/")~~
+  - ~~get : index.html로 보내기~~
 
-- ~~get : index.html로 보내기~~
+- BoardServlet("/board")
+  - get : forward BoardList.jsp
+    - ~~검색 조건 확인~~
+    - pageNum에 해당하는 게시글 조회 및 전달(List<PostListDto> postList)
+    - 전체 페이지 수 전달(int pageTotal)
 
-2. BoardServlet("/board")
+  - post[**추가**] : forward BoardList.jsp
+    - 검색 조건, pageNum에 해당하는 게시글 조회 및 전달(List<PostListDto> postList)
+    - 전체 페이지 수 전달(int pageTotal)
 
-- get : forward BoardList.jsp
-  - ~~검색 조건 확인~~
-  - pageNum에 해당하는 게시글 조회 및 전달(List<PostListDto> postList)
-  - 전체 페이지 수 전달(int pageTotal)
+- PostWriteServlet("/write")
+  - get : forward PostWrite.jsp
 
-- post[**추가**] : forward BoardList.jsp
-  - 검색 조건, pageNum에 해당하는 게시글 조회 및 전달(List<PostListDto> postList)
-  - 전체 페이지 수 전달(int pageTotal)
+- PostSaveServlet("/save")
+  - post : redirect("detail?num={num}")
+    - 게시글 저장(ip도 함께)
 
-3. PostWriteServlet("/write")
+- PostModifyServlet("/modify")
+  - get : forward PostModify.jsp
+    - 해당 게시글의 번호, 제목, 이름, 내 전달(int num, String subject, String writer, String contents)
 
-- get : forward PostWrite.jsp
+  - post :  redirect("detail?num={num}");
+    - 입력 받은 게시글의 제목, 내용을 수정
 
-4. PostSaveServlet("/save")
+- PostDeleteServlet("/delete")
+  - get : redirect("board?pageNum=1")
+    - 게시글 삭제
 
-- post : redirect("detail?num={num}")
-  - 게시글 저장(ip도 함께)
-
-5. PostModifyServlet("/modify")
-
-- get : forward PostModify.jsp
-  - 해당 게시글의 번호, 제목, 이름, 내 전달(int num, String subject, String writer, String contents)
-
-- post :  redirect("detail?num={num}");
-  - 입력 받은 게시글의 제목, 내용을 수정
-
-6. PostDeleteServlet("/delete")
-
-- get : redirect("board?pageNum=1")
-  - 게시글 삭제
-
-7. PostDetailServlet("/detail")
-
-- get : forward PostDetail.jsp
-  - 해당 게시글 조회수 증가[**추가**]
-  - 해당 게시글의 정보 전달(int num, String subject, String writer, String contents, int hit, String reg_date)
+- PostDetailServlet("/detail")
+  - get : forward PostDetail.jsp
+    - 해당 게시글 조회수 증가[**추가**]
+    - 해당 게시글의 정보 전달(int num, String subject, String writer, String contents, int hit, String reg_date)
 
 #### com.bestteam.service
 
@@ -371,3 +352,6 @@ title: "부트캠프 16일차"
 &nbsp;&nbsp; 오류 및 버그가 너무너무 많았다! 프로젝트를 합친 후에 버튼 하나하나 클릭 할 때마다 모두 오류와 버그 투성이였다.
 분업을 각 기능 별로 나누어서 해야 스스로 테스트도 해보면서 개발을 진행할텐데.. 패키지 별로 나누어서 개발했던 것이 가장 큰 원인이 된 것 같다.
 다음에는 기능 별로 분업을 해보아야겠다고 생각했다.
+
+---
+[<== 부트캠프 15일차](/bootcamp-day15) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 17일차 ==>](/bootcamp-day17)
