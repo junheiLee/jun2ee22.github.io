@@ -91,7 +91,7 @@ ${empty param.id}
 
   3. 변수 제거
      - \<c:remove>
-     - <c:remove var="제거할 변수명" scope="변수 선언 위치">
+     - \<c:remove var="제거할 변수명" scope="변수 선언 위치">
 
      ```html
      <c:remove var="age" scope="page" />
@@ -180,6 +180,8 @@ ${empty param.id}
       <c:import url="http://localhost:8080/jstl_all/jstl_url.jsp" var="data" />
       ${data}
       ```
+
+<br>
 
 - fmt : <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
