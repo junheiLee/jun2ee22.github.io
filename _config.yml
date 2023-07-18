@@ -27,7 +27,7 @@ repository               : "chocolaggibbiddori/chocolaggibbiddori.github.io"
 teaser                   : # "/assets/images/500x300.png"
 logo                     : # "../docs/assets/images/apple-touch-icon-precomposed.png"
 masthead_title           : "My Blog"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "강동희"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "제 블로그에 오신걸 환영합니다."
+  bio              : "제 블로그에 오신 것을 환영합니다."
   location         : "경기도 시흥시"
   email            : "didrkd684@naver.com"
   links:
@@ -285,11 +285,12 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: false
       related: false
       show_date: true
       toc: true
+      toc_label: "kick throat"
       classes: wide
