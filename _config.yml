@@ -293,4 +293,4 @@ defaults:
       show_date: true
       toc: true
       toc_label: "kick throat"
-      classes: wide
+#      classes: wide
