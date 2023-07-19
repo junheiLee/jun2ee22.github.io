@@ -10,7 +10,7 @@ main:
 #    url: /collection-archive/
 #  - title: "Sitemap"
 #    url: /sitemap/
-#  - title: "검색"
-#    url: /_layouts/search/
+  - title: "검색"
+    url: /_layouts/search/
 #  - title: "카테고리"
 #    url: /_layouts/categories/
