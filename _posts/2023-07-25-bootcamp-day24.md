@@ -57,7 +57,7 @@ private void doHandle(HttpServletRequest req, HttpServletResponse resp) throws S
 
 - 변경 전
 
-> 1. DriverManager
+> <p> 1. DriverManager </p>
 
    ```java
    @Slf4j
@@ -77,9 +77,11 @@ private void doHandle(HttpServletRequest req, HttpServletResponse resp) throws S
    }
    ```
 
+<br>
+
 - 변경 후
 
-> 1. DataSource
+> <p> 1. DataSource </p>
 
    ```java
    @Slf4j
@@ -101,7 +103,7 @@ private void doHandle(HttpServletRequest req, HttpServletResponse resp) throws S
    }
    ```
 
-> 2. application.yaml
+> <p> 2. application.yaml </p>
 
    ```yaml
    spring:
@@ -118,7 +120,7 @@ private void doHandle(HttpServletRequest req, HttpServletResponse resp) throws S
 
 &nbsp;&nbsp; form 태그 안에 이름을 설정한 후 js에서 쉽게 다루는 방법을 배웠다.
 
-> 1. addMemberForm.html
+> addMemberForm.html
 
 ```html
 ...
