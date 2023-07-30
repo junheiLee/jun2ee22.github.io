@@ -10,7 +10,7 @@ title: "부트캠프 시작"
 > #### 목차
 
 - [day 1](/bootcamp-day1)
-- day 2
+- [day 2](/bootcamp-day2)
 - day 3
 - day 4
 - day 5
