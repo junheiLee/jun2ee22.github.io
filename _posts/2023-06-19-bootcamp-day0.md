@@ -9,14 +9,23 @@ title: "부트캠프 시작"
 
 > #### 목차
 
-- [day 1](../bootcamp-day1)
-- [day 2](../bootcamp-day2)
-- [day 3](../bootcamp-day3)
-- [day 4](../bootcamp-day4)
-- [day 5](../bootcamp-day5)
-- [day 6](../bootcamp-day6)
-- [day 7](../bootcamp-day7)
-- [day 8](../bootcamp-day8)
-- [day 9](../bootcamp-day9)
-- [day 10(DB 실습)](../bootcamp-day10)
-- [day 11~13(미니 프로젝트)](../bootcamp-miniproject-kktalk)
+- [day 1](/bootcamp-day1)
+- day 2
+- day 3
+- day 4
+- day 5
+- day 6
+- day 7
+- day 8
+- [day 9](/bootcamp-day9)
+- [day 10(DB 실습)](/bootcamp-day10)
+- [day 11~13(미니 프로젝트)](/bootcamp-miniproject-kktalk)
+- [day 14](/bootcamp-day14)
+- [day 15](/bootcamp-day15)
+- [day 16](/bootcamp-day16)
+- [day 17](/bootcamp-day17)
+- [day 18](/bootcamp-day18)
+- [day 19~22](/bootcamp-miniproject2-best_board)
+- [day 23](/bootcamp-day23)
+- [day 24](/bootcamp-day24)
+- [day 25](/bootcamp-day25)
