@@ -249,4 +249,4 @@ public class LoadAppConfigServlet extends HttpServlet {
 ```
 
 ---
-[<== 부트캠프 24일차](/bootcamp-day24) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 26일차 ==>](/bootcamp-day26)
+[<== 부트캠프 24일차](/bootcamp-day24) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 28일차 ==>](/bootcamp-day28)
