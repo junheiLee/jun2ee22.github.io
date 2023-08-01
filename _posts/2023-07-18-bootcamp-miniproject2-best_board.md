@@ -5,6 +5,8 @@ title: "부트캠프 미니 프로젝트 best_board"
 
 <br>
 
+> **깃허브 주소** : [https://github.com/chocolaggibbiddori/mini-project2-best_board](https://github.com/chocolaggibbiddori/mini-project2-best_board)
+
 ## 개요
 
 - 팀 이름 : Best Team
