@@ -27,4 +27,4 @@ title: "부트캠프 28일차"
 - 뷰 - 클라이언트에 전송할 화면을 구현
 
 ---
-[<== 부트캠프 25일차](/bootcamp-day25)
+[<== 부트캠프 25일차](/bootcamp-day25) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 미니 프로젝트 3 ==>](/bootcamp-miniproject3-shopping_mall)
