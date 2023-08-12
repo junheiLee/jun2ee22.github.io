@@ -31,7 +31,8 @@ title: "부트캠프 시작"
 - [day 25](/bootcamp-day25)
 - [day 28](/bootcamp-day28)
 - [미니 프로젝트 - shopping_mall](/bootcamp-miniproject3-shopping_mall)
-
+- [day 35](/bootcamp-day35)
+ 
 <br>
 
 > **회고록**
