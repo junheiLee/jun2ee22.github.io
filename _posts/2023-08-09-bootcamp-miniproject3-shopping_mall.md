@@ -185,4 +185,4 @@ public class MemberController extends HttpServlet {
 
 ![로그](../images/shoppingmall/로그.png)
 
-[<== 부트캠프 28일차](/bootcamp-day28)
+[<== 부트캠프 28일차](/bootcamp-day28) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 35일차 ==>](/bootcamp-day35)
