@@ -110,9 +110,9 @@ author:
   location         : "경기도 시흥시"
   email            : "didrkd684@naver.com"
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:your.name@email.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:didrkd684@naver.com"
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://your-website.com"
@@ -220,7 +220,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
