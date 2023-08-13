@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 미니 프로젝트 kktalk"
+tag: [bootcamp, miniproject]
 ---
 
 나만의 메신저 만들기

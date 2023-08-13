@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 28일차"
+tag: [bootcamp, mvc]
 ---
 
 # MVC 디자인 패턴

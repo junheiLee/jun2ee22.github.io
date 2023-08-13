@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 24일차"
+tag: [bootcamp, servlet]
 ---
 
 # Servlet

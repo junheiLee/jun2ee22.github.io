@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 18일차"
+tag: [bootcamp, java web, jsp]
 ---
 
 # Java Web : JSP

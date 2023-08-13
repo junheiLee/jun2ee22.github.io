@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 35일차"
+tag: [bootcamp, mvc, spring framework]
 ---
 
 <br>

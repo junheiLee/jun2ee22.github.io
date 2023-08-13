@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 14일차"
+tag: [bootcamp, java web]
 ---
 
 <br>

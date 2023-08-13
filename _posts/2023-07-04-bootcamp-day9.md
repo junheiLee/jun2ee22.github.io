@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 9일차"
+tag: [bootcamp, db, jdbc]
 ---
 
 <br>

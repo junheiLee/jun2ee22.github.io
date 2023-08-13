@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 15일차"
+tag: bootcamp
 ---
 
 # 팀 실습

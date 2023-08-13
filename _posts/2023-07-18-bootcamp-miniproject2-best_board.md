@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 미니 프로젝트 best_board"
+tag: [bootcamp, miniproject]
 ---
 
 <br>

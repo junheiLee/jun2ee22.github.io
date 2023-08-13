@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "백엔드 개발 부트캠프 회고록 (1주차)"
-
+tag: bootcamp-review
 ---
 
 # 백엔드 개발 부트캠프

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "플레이데이터 백엔드 개발 부트캠프 회고록 (3주차)"
+tag: bootcamp-review
 ---
 
 ## 플레이데이터 백엔드 개발 부트캠프

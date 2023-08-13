@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 2일차"
+tag: [bootcamp, java]
 ---
 
 # 제어문, 배열, 열거 타입

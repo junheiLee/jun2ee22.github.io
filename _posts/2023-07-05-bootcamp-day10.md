@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "부트캠프 10일차"
-typora-root-url: ../
+tag: bootcamp
 ---
 
 ### 실습 코드

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "부트캠프 시작"
+tag: bootcamp
 ---
 
 <br>
