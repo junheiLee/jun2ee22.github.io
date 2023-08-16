@@ -81,102 +81,102 @@ public class Main {
 
 1. Function<T, R>
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface Function<T, R> {
-    
-    R apply(T t);
-}
-```
+   ```java
+   @FunctionalInterface
+   public interface Function<T, R> {
 
-- 함수 조합용 메서드
+       R apply(T t);
+   }
+   ```
 
-  1. default <V> Function<V, R> compose(Function<? super V, ? extends T> before) : 이 함수 이전에 실행할 함수를 매개변수로 넣어준다.
-  2. default <V> Function<T, V> andThen(Function<? super R, ? extends V> after) : 이 함수 이후에 실행할 함수를 매개변수로 넣어준다.
+   - 함수 조합용 메서드
+
+      1. default <V> Function<V, R> compose(Function<? super V, ? extends T> before) : 이 함수 이전에 실행할 함수를 매개변수로 넣어준다.
+      2. default <V> Function<T, V> andThen(Function<? super R, ? extends V> after) : 이 함수 이후에 실행할 함수를 매개변수로 넣어준다.
 
 2. BiFunction<T, U, R>
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface BiFunction<T, U, R> {
+   ```java
+   @FunctionalInterface
+   public interface BiFunction<T, U, R> {
 
-    R apply(T t, U u);
-}
-```
+       R apply(T t, U u);
+   }
+   ```
 
 3. Consumer<T>
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface Consumer<T> {
+   ```java
+   @FunctionalInterface
+   public interface Consumer<T> {
 
-    void accept(T t);
-}
-```
+       void accept(T t);
+   }
+   ```
 
-- 함수 조합용 메서드
+   - 함수 조합용 메서드
 
-  1. default Consumer<T> andThen(Consumer<? super T> after) : 이 함수 이후에 실행할 함수를 매개변수로 넣어준다.
+      1. default Consumer<T> andThen(Consumer<? super T> after) : 이 함수 이후에 실행할 함수를 매개변수로 넣어준다.
 
 4. Supplier<T>
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface Supplier<T> {
+   ```java
+   @FunctionalInterface
+   public interface Supplier<T> {
 
-    T get();
-}
-```
+       T get();
+   }
+   ```
 
 5. Predicate<T>
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface Predicate<T> {
+   ```java
+   @FunctionalInterface
+   public interface Predicate<T> {
 
-    boolean test(T t);
-}
-```
+       boolean test(T t);
+   }
+   ```
 
-- 함수 조합용 메서드
+   - 함수 조합용 메서드
 
-  1. default Predicate<T> negate() : 결과 반전
-  2. default Predicate<T> and(Predicate<? super T> other) : 매개변수와의 and 조건
-  3. default Predicate<T> or(Predicate<? super T> other) : 매개변수와의 or 조건
+      1. default Predicate<T> negate() : 결과 반전
+      2. default Predicate<T> and(Predicate<? super T> other) : 매개변수와의 and 조건
+      3. default Predicate<T> or(Predicate<? super T> other) : 매개변수와의 or 조건
 
 6. UnaryOperator<T>
 
-&nbsp;&nbsp; Function을 상속 받은 특수한 형태로, 입력과 출력이 모두 같은 타입이라면 Function을 이 인터페이스로 간단하게 사용할 수 있다.
+   &nbsp;&nbsp; Function을 상속 받은 특수한 형태로, 입력과 출력이 모두 같은 타입이라면 Function을 이 인터페이스로 간단하게 사용할 수 있다.
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface UnaryOperator<T> extends Function<T, T> {
-}
-```
+   ```java
+   @FunctionalInterface
+   public interface UnaryOperator<T> extends Function<T, T> {
+   }
+   ```
 
 7. BinaryOperator<T>
 
-&nbsp;&nbsp; BiFunction을 상속 받은 특수한 형태로, 두 개의 입력과 출력이 모두 같은 타입이라면 BiFunction을 이 인터페이스로 간단하게 사용할 수 있다.
+   &nbsp;&nbsp; BiFunction을 상속 받은 특수한 형태로, 두 개의 입력과 출력이 모두 같은 타입이라면 BiFunction을 이 인터페이스로 간단하게 사용할 수 있다.
 
-- 선언부
+   - 선언부
 
-```java
-@FunctionalInterface
-public interface BinaryOperator<T> extends BiFunction<T,T,T> {
-}
-```
+   ```java
+   @FunctionalInterface
+   public interface BinaryOperator<T> extends BiFunction<T,T,T> {
+   }
+   ```
 
 <br>
 
@@ -186,24 +186,24 @@ public interface BinaryOperator<T> extends BiFunction<T,T,T> {
 
 1. 매개변수가 없는 경우 : () -> { 실행문; }
 
-ex)
-```java
-Supplier<Integer> get10 = () -> { return 10; } // 실행문이 한 줄일 경우 중괄호와 return 생략 가능
-```
+   ex)
+   ```java
+   Supplier<Integer> get10 = () -> { return 10; } // 실행문이 한 줄일 경우 중괄호와 return 생략 가능
+   ```
 
 2. 매개변수가 하나인 경우 : (매개변수 1) -> { 실행문; }
 
-ex)
-```java
-Consumer<Integer> add10 : i -> i + 10; // 매개변수에 타입 생략 가능(명시할 수도 있다)
-```
+   ex)
+   ```java
+   Consumer<Integer> add10 : i -> i + 10; // 매개변수에 타입 생략 가능(명시할 수도 있다)
+   ```
 
 3. 매개변수가 둘인 경우 : (매개변수 1, 매개변수 2) -> { 실행문; }
 
-ex)
-```java
-BinaryOperator<Integer> sum = (a, b) -> a + b;
-```
+   ex)
+   ```java
+   BinaryOperator<Integer> sum = (a, b) -> a + b;
+   ```
 
 <br>
 
@@ -211,15 +211,15 @@ BinaryOperator<Integer> sum = (a, b) -> a + b;
 
 - 로컬 변수 캡처
 
-&nbsp;&nbsp; 람다는 final이나 effective final인 변수만 참조할 수 있다. 그렇지 않은 경우 컴파일 에러가 발생한다.
+   &nbsp;&nbsp; 람다는 final이나 effective final인 변수만 참조할 수 있다. 그렇지 않은 경우 컴파일 에러가 발생한다.
 
 - effective final
 
-&nbsp;&nbsp; final 키워드가 없어도 초기화 이후 값이 변하지 않는 사실상 final인 변수
+   &nbsp;&nbsp; final 키워드가 없어도 초기화 이후 값이 변하지 않는 사실상 final인 변수
 
 - 쉐도윙(shadowing)하지 않음
 
-&nbsp;&nbsp; 위의 두 특징은 내부 로컬 클래스, 익명 클래스와의 공통점이다. 람다가 내부 로컬 클래스, 익명 클래스와 차이가 있다면 쉐도윙을 하지 않는다는 것이다.
+   &nbsp;&nbsp; 위의 두 특징은 내부 로컬 클래스, 익명 클래스와의 공통점이다. 람다가 내부 로컬 클래스, 익명 클래스와 차이가 있다면 쉐도윙을 하지 않는다는 것이다.
 즉, 바깥 scope에서 선언된 변수와 이름이 같은 변수를 선언하거나 매개변수로 받아서 사용하지 못한다.  
 &nbsp;&nbsp; 이는 내부 로컬 클래스, 익명 클래스는 자신만의 별도의 scope를 갖는 반면에, 람다는 별도의 scope를 가지지 않기 때문이다.
 따라서, 람다 내부에서 상위 scope에서 사용한 변수와 같은 이름의 변수를 선언하거나 매개변수로 선언한다면 컴파일 에러가 발생한다.
