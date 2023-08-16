@@ -269,3 +269,5 @@ public class Main {
     }
 }
 ```
+
+[section 2 ==>](/the-java-8-section-2)
