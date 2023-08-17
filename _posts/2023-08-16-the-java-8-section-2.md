@@ -184,4 +184,4 @@ public interface Collection<E> {
 - static <T> Comparator<T> nullsFirst(Comparator<? super T> comparator) : 비교할 요소 중 null이 있다면 null을 앞으로 정렬함
 - static <T> Comparator<T> nullsLast(Comparator<? super T> comparator) : 비교할 요소 중 null이 있다면 null을 뒤로 정렬함
 
-[<== section 1](/the-java-8-section-1)
+[<== section 1](/the-java-8-section-1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 3 ==>](/the-java-8-section-3)
