@@ -270,4 +270,11 @@ public class Main {
 }
 ```
 
+<br>
+
+___
+
+**[참고]**  
+백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)
+
 [section 2 ==>](/the-java-8-section-2)

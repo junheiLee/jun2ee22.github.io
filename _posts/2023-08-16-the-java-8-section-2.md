@@ -184,4 +184,11 @@ public interface Collection<E> {
 - static <T> Comparator<T> nullsFirst(Comparator<? super T> comparator) : 비교할 요소 중 null이 있다면 null을 앞으로 정렬함
 - static <T> Comparator<T> nullsLast(Comparator<? super T> comparator) : 비교할 요소 중 null이 있다면 null을 뒤로 정렬함
 
+<br>
+
+___
+
+**[참고]**  
+백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)
+
 [<== section 1](/the-java-8-section-1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 3 ==>](/the-java-8-section-3)
