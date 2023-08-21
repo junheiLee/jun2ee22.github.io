@@ -33,15 +33,17 @@ tag: bootcamp
 - [day 28](/bootcamp-day28)
 - [미니 프로젝트 - shopping_mall](/bootcamp-miniproject3-shopping_mall)
 - [day 35](/bootcamp-day35)
+- [day 40](/bootcamp-day40)
  
 <br>
 
 > **회고록**
 
-- [1주차](/bootcamp-bootcamp-week1-review)
-- [2주차](/bootcamp-bootcamp-week2-review)
-- [3주차](/bootcamp-bootcamp-week3-review)
-- [4주차](/bootcamp-bootcamp-week4-review)
-- [5주차](/bootcamp-bootcamp-week5-review)
-- [6주차](/bootcamp-bootcamp-week6-review)
-- [8주차](/bootcamp-bootcamp-week8-review)
+- [1주차](/bootcamp-week1-review)
+- [2주차](/bootcamp-week2-review)
+- [3주차](/bootcamp-week3-review)
+- [4주차](/bootcamp-week4-review)
+- [5주차](/bootcamp-week5-review)
+- [6주차](/bootcamp-week6-review)
+- [8주차](/bootcamp-week8-review)
+- [9주차](/bootcamp-week9-review)

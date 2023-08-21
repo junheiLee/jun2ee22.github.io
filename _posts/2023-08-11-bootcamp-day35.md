@@ -68,4 +68,4 @@ DispatcherServlet은 요청에 대응하는 핸들러를 실행한 후 그 결�
 - 일반 메서드 주입(잘 사용하지 않는다!)
 
 ---
-[<== 부트캠프 미니 프로젝트 3](/bootcamp-miniproject3-shopping_mall)
+[<== 부트캠프 미니 프로젝트 3](/bootcamp-miniproject3-shopping_mall) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 40일차 ==>](/bootcamp-day40)
