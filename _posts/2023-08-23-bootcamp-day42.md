@@ -148,4 +148,4 @@ public void download(@RequestParam("imageFileName") String imageFileName, HttpSe
 
 ___
 
-[<== 부트캠프 40일차](/bootcamp-day40)
+[<== 부트캠프 40일차](/bootcamp-day40) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 46일차 ==>](/bootcamp-day46)
