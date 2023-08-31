@@ -292,5 +292,6 @@ defaults:
       related: false
       show_date: true
       toc: true
-      toc_label: "kick throat"
+      toc_sticky: true
+      toc_label: "목차"
 #      classes: wide
