@@ -179,4 +179,4 @@ ___
 백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)  
 남궁성의 정석코딩, 유튜브 강의 ['자바의 정석'](https://www.youtube.com/watch?v=7Kyf4mMjbTQ&list=PLW2UjW795-f6xWA2_MUhEVgPauhGl3xIp)
 
-[<== section 2](/the-java-8-section-2)
+[<== section 2](/the-java-8-section-2) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 4 ==>](/the-java-8-section-4)
