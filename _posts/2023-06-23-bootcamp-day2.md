@@ -361,4 +361,4 @@ public enum Direction {
 ```
 
 ---
-[<== 부트캠프 1일차](/bootcamp-day1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 3일차 ==>](/bootcamp-day3)
+[<== 부트캠프 1일차](/bootcamp-day1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 9일차 ==>](/bootcamp-day9)

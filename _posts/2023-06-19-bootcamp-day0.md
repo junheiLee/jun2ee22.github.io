@@ -12,12 +12,6 @@ tag: bootcamp
 
 - [day 1](/bootcamp-day1)
 - [day 2](/bootcamp-day2)
-- day 3
-- day 4
-- day 5
-- day 6
-- day 7
-- day 8
 - [day 9](/bootcamp-day9)
 - [day 10(DB 실습)](/bootcamp-day10)
 - [미니 프로젝트 - kktalk](/bootcamp-miniproject-kktalk)
