@@ -51,4 +51,4 @@ ___
 장정우, 스프링 부트 핵심 가이드(스프링 부트를 활용한 애플리케이션 개발 실무)  
 깃허브 주소 : [https://github.com/chocolaggibbiddori/springboot-wikibooks](https://github.com/chocolaggibbiddori/springboot-wikibooks)
 
-[<== 부트캠프 42일차](/bootcamp-day42)
+[<== 부트캠프 42일차](/bootcamp-day42) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 48일차 ==>](/bootcamp-day48)
