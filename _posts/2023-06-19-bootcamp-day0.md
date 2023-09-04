@@ -32,6 +32,7 @@ tag: bootcamp
 - [미니 프로젝트 - shopping-mall-spring](/bootcamp-miniproject4-shopping-mall-spring)
 - [day 46](/bootcamp-day46)
 - [day 48](/bootcamp-day48)
+- [day 49](/bootcamp-day49)
 
 <br>
 
