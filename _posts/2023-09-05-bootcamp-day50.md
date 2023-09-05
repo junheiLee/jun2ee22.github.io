@@ -116,6 +116,77 @@ List<Product> productList = jpaQueryFactory
 
 <br>
 
+## JPA Auditing
+
+&nbsp;&nbsp; 엔티티 클래스에 공통적으로 들어가는 필드가 있는 경우가 있다.
+가령, '생성 일자', '생성한 사람', '변경 일자', '변경한 사람' 등이 있을 수 있는데,
+이런 필드들은 엔티티가 여러 개일 경우 중복될 뿐 아니라 객체를 생성하거나 변경할 때마다 계속 값을 입력해야 하는 번거로움이 있다.
+
+&nbsp;&nbsp; 이 문제를 해결하기 위해 Spring Data JPA는 JPA Auditing이라는 기능을 제공한다.
+
+### 기능 활성화
+
+1. Application 클래스에 `@EnableJpaAuditing` 어노테이션을 추가
+2. Configuration 클래스를 별도로 분리해서 `@EnableJpaAuditing` 어노테이션을 추가
+
+### 부모 클래스 만들기
+
+&nbsp;&nbsp; 필드의 중복을 제거하기 위해서 자바에서는 보통 상속의 개념을 사용한다. JPA Auditing 기능에서도 똑같이 상속을 사용해서 중복을 제거할 수 있다.
+
+- 부모 클래스에는 `@MappedSuperclass` 어노테이션을 붙여줘야함
+- @EntityListeners 어노테이션을 이용해서 AuditingEntityListener 클래스가 제공하는 시간 세팅 로직을 적용
+- @CreatedDate, @LastModifiedDate 어노테이션으로 생성, 수정 시간 필드로 설정
+
+> BaseEntity
+
+```java
+@Getter
+@Setter
+@ToString
+@MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
+public class BaseEntity {
+
+    @CreatedDate
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
+    @LastModifiedDate
+    private LocalDateTime updatedAt;
+}
+```
+
+<br>
+
+> Product
+
+```java
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString(callSuper = true)
+@Entity
+public class Product extends BaseEntity {
+
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
+    private Long id;
+    
+    @Column(nullable = false)
+    private String name;
+    
+    @Column(nullable = false)
+    private int price;
+    
+    @Column(nullable = false)
+    private int stock;
+}
+```
+
+> **`@ToString` 어노테이션의 callSuper 속성**
+> 
+> &nbsp;&nbsp; true로 설정하면 부모 클래스의 필드를 포함한다.
+
 ___
 
 **[참고]**  
