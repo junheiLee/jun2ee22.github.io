@@ -34,6 +34,7 @@ tag: bootcamp
 - [day 48](/bootcamp-day48)
 - [day 49](/bootcamp-day49)
 - [day 50](/bootcamp-day50)
+- [day 51](/bootcamp-day51)
 
 <br>
 
