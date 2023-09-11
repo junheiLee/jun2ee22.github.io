@@ -53,7 +53,7 @@ NullPointerException이 발생하는 이유는 null 체크를 하지 않았기 �
 
 1. `public T get()` : value를 반환. 빈 Optional 즉, value가 null일 경우 NoSuchElementException 발생
 2. `public T orElse(T other)` : 기본값 설정 메서드. value를 반환하되 value가 null일 경우 매개변수 other를 반환
-3. `public T orElseGet(Supplier<? extends T> supplier` : `orElse()` 메서드와 동일하나 매개변수로 람다를 입력 받음
+3. `public T orElseGet(Supplier<? extends T> supplier)` : `orElse()` 메서드와 동일하나 매개변수로 람다를 입력 받음
 4. `public T orElseThrow()` : `get()` 메서드와 동일하나 value가 null일 경우 NoSuchElementException 발생 - ***JAVA 10***
 5. `public <X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier) throws X` : value를 반환하되 value가 null일 경우 매개변수로 입력 받은 예외를 던짐
 
