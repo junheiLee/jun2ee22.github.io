@@ -52,3 +52,4 @@ tag: bootcamp
 - [8주차](/bootcamp-week8-review)
 - [9주차](/bootcamp-week9-review)
 - [10주차](/bootcamp-week10-review)
+- [13주차](/bootcamp-week13-review)
