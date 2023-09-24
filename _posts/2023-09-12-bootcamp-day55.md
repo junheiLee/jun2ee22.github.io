@@ -21,7 +21,7 @@ tag: [ bootcamp, spring framework, spring boot, communication ]
 | 메서드             | HTTP 형식 | 설명                                           |
 |-----------------|---------|----------------------------------------------|
 | getForObject    | GET     | 요청한 결과를 객체로 반환                               |
-| getForEntity    | GET     | 요청한 결과를 REsponseEntity 객체로 반환                |
+| getForEntity    | GET     | 요청한 결과를 ResponseEntity 객체로 반환                |
 | postForLocation | POST    | 요청한 결과를 헤더에 저장된 URI로 반환                      |
 | postForObject   | POST    | 요청한 결과를 객체로 반환                               |
 | postForEntity   | POST    | 요청한 결과를 ResponseEntity 객체로 반환                |
