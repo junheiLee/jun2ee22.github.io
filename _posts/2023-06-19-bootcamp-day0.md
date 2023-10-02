@@ -38,6 +38,7 @@ tag: bootcamp
 - [day 53](/bootcamp-day53)
 - [day 54](/bootcamp-day54)
 - [day 55](/bootcamp-day55)
+- [미니 프로젝트 - ultimates](/bootcamp-miniproject5-ultimates)
 
 <br>
 
