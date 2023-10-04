@@ -256,4 +256,4 @@ ___
 깃허브
 주소 : [https://github.com/chocolaggibbiddori/springboot-wikibooks](https://github.com/chocolaggibbiddori/springboot-wikibooks)
 
-[<== 부트캠프 54일차](/bootcamp-day54)
+[<== 부트캠프 54일차](/bootcamp-day54) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [부트캠프 65일차 ==>](/bootcamp-day65)
