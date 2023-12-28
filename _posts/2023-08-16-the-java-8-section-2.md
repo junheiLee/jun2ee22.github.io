@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(인터페이스의 변화)"
-tag: [inflearn, java]
+tag: java
 categories: chocolaggibbiddori
 ---
 

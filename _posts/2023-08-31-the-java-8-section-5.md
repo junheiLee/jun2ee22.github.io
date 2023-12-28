@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(Date/Time)"
-tag: [inflearn, java]
+tag: java
 categories: chocolaggibbiddori
 ---
 
