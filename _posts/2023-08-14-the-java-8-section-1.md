@@ -2,6 +2,7 @@
 layout: single
 title: "자바 8(함수형 인터페이스와 람다)"
 tag: [inflearn, java]
+categories: chocolaggibbiddori
 ---
 
 <br>
@@ -277,4 +278,4 @@ ___
 **[참고]**  
 백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)
 
-[section 2 ==>](/the-java-8-section-2)
+[section 2 ==>](/chocolaggibbiddori/the-java-8-section-2)

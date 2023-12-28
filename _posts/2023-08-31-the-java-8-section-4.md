@@ -2,6 +2,7 @@
 layout: single
 title: "자바 8(Optional)"
 tag: [inflearn, java]
+categories: chocolaggibbiddori
 ---
 
 # 자바 8 주요 기능 4
@@ -72,4 +73,4 @@ ___
 남궁성의 정석코딩, 유튜브 강의 ['자바의 정석'](https://www.youtube.com/watch?v=W_kPjiTF9RI)  
 Joshua Bloch, 이펙티브 자바(아이템 55, 옵셔널 반환은 신중히 하라)
 
-[<== section 3](/the-java-8-section-3)
+[<== section 3](/chocolaggibbiddori/the-java-8-section-3) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 5 ==>](/chocolaggibbiddori/the-java-8-section-5)

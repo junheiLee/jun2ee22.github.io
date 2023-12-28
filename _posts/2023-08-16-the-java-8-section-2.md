@@ -2,6 +2,7 @@
 layout: single
 title: "자바 8(인터페이스의 변화)"
 tag: [inflearn, java]
+categories: chocolaggibbiddori
 ---
 
 <br>
@@ -191,4 +192,4 @@ ___
 **[참고]**  
 백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)
 
-[<== section 1](/the-java-8-section-1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 3 ==>](/the-java-8-section-3)
+[<== section 1](/chocolaggibbiddori/the-java-8-section-1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [section 3 ==>](/chocolaggibbiddori/the-java-8-section-3)

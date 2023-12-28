@@ -2,6 +2,7 @@
 layout: single
 title: "JPA - AttributeConverter"
 tag: jpa
+categories: chocolaggibbiddori
 ---
 
 # JPA의 AttributeConverter 인터페이스 사용법
