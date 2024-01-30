@@ -4,12 +4,10 @@ title: "[Network] REST API"
 categories: CS
 tag: [network, http]
 ---
-# 🤜Representational State Transfer Application Programming Interface🤛
-<br>
-새삼 별다줄
-<br>
+# Representational State Transfer Application Programming Interface
+별다줄
 
-## 👉REpresentational State Transfer?👈
+## REpresentational State Transfer?
 &nbsp;[ORACLE](https://docs.oracle.com/database/apex-18.1/AEUTL/what-is-REST.htm#AEUTL29132)에서 다음과 같이 정의합니다.<br> 
 > a way of providing interoperability between computer systems on the Internet<br>
 *인터넷상에서 컴퓨터 시스템 간의 상호 운용성을 제공하는 방법*
@@ -17,7 +15,7 @@ tag: [network, http]
 &nbsp; [상호운용성](https://aws.amazon.com/ko/what-is/interoperability/)이라는 단어가 와닿지 않는데, 다음의 **등장 배경**을 보고 나서 직관적으로 이해했습니다.
 
 
-### 등장 배경🧩
+### 등장 배경
 &nbsp;Roy 씨가 HTTP 명세를 작성하는 당시, HTTP는 Word Wide Web(www)의 전송 프로토콜로 이용되고 있었다고 합니다.<br>
 &nbsp;HTTP를 제멋대로 고치면 이미 구축되어 있는 Web과 호환에 문제가 생길 것 같아요.<br>
 <br>
@@ -35,15 +33,14 @@ tag: [network, http]
 
 영어 잘하게 되면 이 논문을 읽어보겠습니다.
 
-### REST🌏
+### REST
 ❗`HTTP`❗로 통신할 때, `상호운용성`을 제공하기 위해 나온 ❗아키텍처 스타일❗
 
-<br><br>
-## 👉Application Programming Interface?👈
+## Application Programming Interface?
 &nbsp;고유한 기능을 가진 소프트웨어에서 구성 요소가 상호 간에 통신할 수 있도록 하는 메커니즘이라고 합니다.
 <br> 정의는 언제나 어려운 것 같아요. 코딩애플에서는 메뉴판이라고 비유하는 데 직관적으로 이해됐어요.
 
-### 등장🧩
+### 등장
 2000년, Salesforce API가 거의 최초로 공개된 API라고 합니다.
 바로 요 녀석이 SOAP API입니다.
 ```xml
@@ -68,7 +65,7 @@ tag: [network, http]
 <!-- ID로 Object 하나를 가져오는 API 요청 메시지인데 잠 깰 겸 쳐봤지만 끔찍하군요-->
 ```
 
-### 4개 밖에 있음🧩
+### 4개 밖에 있음
 
 &nbsp; 저는 개인적으로 REST API부터 접했기에 API랑 REST API를 분리하는 게 어려웠어요^^> <br>
 그래서 API의 종류를 간단하게 찾아봤습니다.
@@ -82,13 +79,13 @@ tag: [network, http]
 `SOAP`: Microsoft가 개발한 XML-RPC(1998) 프로토콜에 부가적인 기능을 추가한 `프르토콜`, ~~XML-RPC가 더 많이 사용된다고 합니다.~~ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그렇지만 보안이 깨나 엄격하고, ACID를 준수해서 기업용 애플리케이션에 쓰일 수 있다고 합니다. <br>
 `RPC`: remote procedure call, 원격으로 다른 시스템의 메서드를 호출할 수 있는 `프로토콜`, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능이나 작업에 초점을 맞춘다고 합니다.<br>
 
-### API🌏
+### API
 프로그램의 메뉴판!!
 <br>
 
-# 🤜REST API🤛
+# REST API
 
-## 등장🧩
+## 등장
 
 2004년, flickr에서 여러가지 형태의 API가 나왔습니다.
 
@@ -117,7 +114,7 @@ tag: [network, http]
 &nbsp;하지만 변태가 아니라면 REST를 쓰고 싶잖아요.<br>
 그렇다면 REST API, 그러니까 REST라는 아키텍처 스타일을 만족하려면 어떻게 해야 할지 알아볼게요.
 
-## Rest 아키텍처 스타일 제약 조건🧩
+## Rest 아키텍처 스타일 제약 조건
 &nbsp; 완벽할 수 없다는 것은 알지만 이왕 공부하는 거 완벽하게 하고 싶어요...<br>
 [Joy씨의 논문](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1) CHAPTER 5.1에 해당하는 부분을 "제멋대로" 해석해 보겠습니다.
 이 Chapter에서는 REST가 아키텍처 스타일로서 파생되는 과정을 따라가며 개요를 제공해줍니다.
@@ -135,7 +132,7 @@ tag: [network, http]
 &nbsp; 첫 번째로 추가된 이 녀석의 기본 원칙은 **관심사의 분리(Soc)** 입니다. <br>
 '사용자 인터페이스'와 '데이터의 저장' 두 관심사를 분리해서 확장성을 향상할 수 있어요.
 **분리**가 각 구성 요소를 독립적으로 진화할 수 있게 한다는 것이죠.
-그러면 인터넷 규모의 여러 도메인들의 요구사항을 지원할 수 있습니다.
+그러면 인터넷 규모의 여러 도메인들의 요구사항을 지원할 수 있습니다.<br>
 ![@Schema](../../images/2024-01-30-http-restapi/1.PNG)<br>
 &nbsp; client는 trigger, server는 trigger에 따라 반응하는 process라고 Andrews 씨가 말했대요.
 생각해보면 client는 필요할 때만 방아쇠를 당기겠지만 server는 연신 돌아가고 있어야 하죠.
