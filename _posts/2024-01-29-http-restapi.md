@@ -5,7 +5,10 @@ categories: CS
 tag: [network, http]
 ---
 # Representational State Transfer Application Programming Interface
-별다줄
+별다줄<br>
+사실 개발자의 진정한 덕목은 준말을 자유자재로 사용하는 것이 아닐까요? 개덕준사.<br>
+
+
 
 ## REpresentational State Transfer?
 &nbsp;[ORACLE](https://docs.oracle.com/database/apex-18.1/AEUTL/what-is-REST.htm#AEUTL29132)에서 다음과 같이 정의합니다.<br> 
@@ -21,7 +24,7 @@ tag: [network, http]
 <br>
  따라서 다음과 같은 고민을 합니다.<br>
 ![@Schema](../../images/2024-01-30-http-restapi/why.PNG)
-<br> &nbsp;이에 대한 해결책으로 `HTTP Object Model`이 등장하고, 
+<br> &nbsp;*어떻게 하면 Web을 망가뜨리지 않고 HTTP를 향상시키지?* 이에 대한 해결책으로 `HTTP Object Model`이 등장하고, 
 <br>1998년 `REST`라는 이름으로 발표합니다.
 > [Representational State Transfer: An Architectural Style for Distribution Hypermedia Interaction](https://ics.uci.edu/~fielding/talks/webarch_9805/index.htm)
 <br> *표현적인 상태 전송: 분산 하이퍼미디어 시스템(ex. web)을 위한 아키텍처 스타일*
@@ -34,7 +37,7 @@ tag: [network, http]
 영어 잘하게 되면 이 논문을 읽어보겠습니다.
 
 ### REST
-❗`HTTP`❗로 통신할 때, `상호운용성`을 제공하기 위해 나온 ❗아키텍처 스타일❗
+❗HTTP❗로 통신할 때, `상호운용성`을 제공하기 위해 나온 ❗아키텍처 스타일❗
 
 ## Application Programming Interface?
 &nbsp;고유한 기능을 가진 소프트웨어에서 구성 요소가 상호 간에 통신할 수 있도록 하는 메커니즘이라고 합니다.
@@ -121,26 +124,46 @@ tag: [network, http]
 
 ### 0. Null
 &nbsp;an empty set of constraint! 처음은 당연히 어떤 제약조건도 없습니다.<br>
+
 ![@Schema](../../images/2024-01-30-http-restapi/0.PNG)<br>
-&nbsp;다만 아키텍처를 설계할 때, 제약없이 요구 사항만으로 시작해서 시스템과 전체적인 조화를 이루도록 제약 조건을 적용했다고 합니다.
+
+&nbsp;다만 아키텍처를 설계할 때, 제약없이 요구 사항만으로 시작해서 시스템과 전체적인 조화를 이루도록 점차적으로 제약 조건을 적용했다고 합니다.
 이렇게 하면 시스템의 맥락에 대한 제약과 이해를 더 강조한다고 하네요. 마냥 구성 요소를 추가하는 것 보다는 당연히 제약이 강조되고, 그러다 보면 맥락이 이해가 되지 않을까요?<br>
 <br>
 **저는 바보라서 그냥 Null에서 시작한다고 알고 넘어가겠습니다.**
 
 
 ### 1. client-server
-&nbsp; 첫 번째로 추가된 이 녀석의 기본 원칙은 **관심사의 분리(Soc)** 입니다. <br>
-'사용자 인터페이스'와 '데이터의 저장' 두 관심사를 분리해서 확장성을 향상할 수 있어요.
-**분리**가 각 구성 요소를 독립적으로 진화할 수 있게 한다는 것이죠.
-그러면 인터넷 규모의 여러 도메인들의 요구사항을 지원할 수 있습니다.<br>
+&nbsp; 첫 번째로 추가된 이 녀석의 기본 원칙은 ❗관심사의 분리(Soc)❗ 입니다. <br>
+<u>사용자 인터페이스</u>와 <u>데이터의 저장</u> 두 관심사를 분리하는 겁니다.<br>
+
 ![@Schema](../../images/2024-01-30-http-restapi/1.PNG)<br>
-&nbsp; client는 trigger, server는 trigger에 따라 반응하는 process라고 Andrews 씨가 말했대요.
-생각해보면 client는 필요할 때만 방아쇠를 당기겠지만 server는 연신 돌아가고 있어야 하죠.
 
+&nbsp;'분리'가 각 구성 요소를 '독립적'으로 '진화'할 수 있게 한다는 것이죠.<br>
+그럼 확장성을 향상할 수 있고, 인터넷 규모의 여러 도메인들의 요구사항을 지원할 수 있습니다.<br>
 
+&nbsp; <span style="color: #808080"> client는 trigger, server는 trigger에 따라 반응하는 process라고 Andrews 씨가 말했대요.
+생각해보면 client는 필요할 때만 방아쇠를 당기겠지만 server는 연신 돌아가고 있어야 하네요. 참고로 이 친구도 아키텍처 스타일이에요. </span>
 
 
 ### 2. stateless
+&nbsp; 다음으로 무상태를 추가합니다. 이 녀석은 서버에 상태가 없어야 한다는 제약이에요.<br>
+제약을 지키면 서버에 저장된 컨텍스트를 활용할 수 없겠죠? 그렇기 때문에 client가 server에게 요청 시, 요청을 이해하기 위한 ❗모든 정보를 포함해 요청❗해야 합니다.<br>
+
+![@Schema](../../images/2024-01-30-http-restapi/2.PNG)<br>
+
+&nbsp; 이 아키텍처 스타일은 가시성, 신뢰성, 확장성을 향상할 수 있어요.<br>
+모든 정보가 들어있으니, 모니터링 시스템은 단일요청만 봐도 가시적으로 알 수 있겠죠?<br>
+잘못된 부분이 있는 경우, 해당하는 부분만 고칠 수 있어요. 예를 들어 서버1에서 장애가 발생하면, 서버2를 호출하면 돼요. 어차피 요청에 다 있잖아요. 깨나 믿을 만하군요.<br>
+그리고, 서버를 한 100개 만들어도 같은 기능을 하면 되니까 수평 확장에 유리합니다.<br>
+
+그런데! 단점도 있어요. 맞아요 귀찮겠죠? 는 아니고 아무래도 클라이언트가 데이터를 추가적으로 전송해야하고, 네트워크 성능 저하 가능성이 있다고 합니다.
+
+
+&nbsp; <span style="color: #808080">client-stateless-server라고 하면 더 와닿을까요? 사실 client-server에 해당 제약을 추가하며 파생된 친구입니다.<br>
+김영한님은 점원을 서버로 예를 들어 주셨어요. stateless는 요청마다 모든 정보를 포함해서 중간에 점원이 바뀌어도 됩니다.<br>
+"노트북 얼마에요?" "만원이요." "하나 주세요" "뭐를요?" vs "노트북 얼마에요?" "만원이요.""노트북 두 개 주세요.""이만원~"</span>
+
 ### 3. cache
 ### 4. layered system
 ### 5. code-on-demand(optional)
