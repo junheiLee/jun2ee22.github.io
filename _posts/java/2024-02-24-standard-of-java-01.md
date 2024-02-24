@@ -23,7 +23,7 @@ tag: [Java, Java의 정석]
 응용 프로그램은 OS가 제공하는 API를 사용해 네트워크 통신, 파일 시스템, 메모리 할당 등 실질적인 하드웨어 자원에 접근할 수 있는 거죠.
 
 &nbsp; 여기서 OS마다 동작 방식이 조금씩 다릅니다.<br>
-![@Schema](../../images/2024-02-24-standard-of-java-01/different-by-os.PNG)<br>
+![@Schema](../../images/2024-02-24-standard-of-java-01/different-by-os.png)<br>
 이에 따라 OS에 종속적인 프로그래밍 언어가 있을 수 있고, 종속되지는 않더라도 다양한 플랫폼에서 실행하기 위해 약간은 신경을 써야 할 부분이 더러 있습니다.
 예를 들어 C나 C++은 코드 내에서 특정 OS에 따라 코드 블록을 컴파일해 OS에 맞는 API를 호출하기도 합니다.
 
@@ -106,7 +106,7 @@ JVM에서 사용하는 친구인데 다음에 더 깊게 공부할 예정이지�
 
 &nbsp; 분산 처리가 한 작업을 분산해 작은 책임을 갖고 효율적으로 처리하는 것이라해도, 저는!!! 멍청해서,, 와닿지 않아요.
 chatGPT 형님께 도움을 청했습니다.<br>
-![@Schema](../../images/2024-02-24-standard-of-java-01/java-packages-related-to-distributed-processing.PNG)<br>
+![@Schema](../../images/2024-02-24-standard-of-java-01/java-packages-related-to-distributed-processing.png)<br>
 쿸,, 다음!
 <br><br>
 
