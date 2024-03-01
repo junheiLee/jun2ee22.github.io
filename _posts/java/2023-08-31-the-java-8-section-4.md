@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(Optional)"
-tag: java
+tag: Java
 categories: chocolaggibbiddori
 ---
 

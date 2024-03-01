@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(Date/Time)"
-tag: java
+tag: Java
 categories: chocolaggibbiddori
 ---
 

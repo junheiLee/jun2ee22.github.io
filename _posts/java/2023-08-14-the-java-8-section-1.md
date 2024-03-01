@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(함수형 인터페이스와 람다)"
-tag: java
+tag: Java
 categories: chocolaggibbiddori
 ---
 

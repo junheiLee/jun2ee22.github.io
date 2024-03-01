@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "자바 8(인터페이스의 변화)"
-tag: java
+tag: Java
 categories: chocolaggibbiddori
 ---
 
