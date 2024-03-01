@@ -316,9 +316,9 @@ Spring이든 뭐든 강의를 구매하는 이유를 깨달았지 뭐예요... �
 <p> 
   <strong>👀 참고: </strong>
   <span itemprop="keywords">
-    <a href="https://www.youtube.com/watch?v=RP_f5dMoHFc" class="page__taxonomy-item p-category">이응준, '그런 REST API로 괜찮은가'</a><span class="sep">, </span>
-    <a href="https://aws.amazon.com/ko/what-is/api/" class="page__taxonomy-item p-category">aws, 'API란 무엇인가요?'</a><span class="sep">, </span>
-    <a href="https://www.youtube.com/watch?v=ckSdPNKM2pY&t=106s" class="page__taxonomy-item p-category">코딩애플, '코딩초보들이 헷갈리는 용어 : API가 뭐냐면'</a><span class="sep">, </span>
+    <a href="https://www.youtube.com/watch?v=RP_f5dMoHFc" class="page__taxonomy-item p-category">이응준, '그런 REST API로 괜찮은가'</a><span class="sep">&nbsp; </span>
+    <a href="https://aws.amazon.com/ko/what-is/api/" class="page__taxonomy-item p-category">aws, 'API란 무엇인가요?'</a><span class="sep">&nbsp; </span>
+    <a href="https://www.youtube.com/watch?v=ckSdPNKM2pY&t=106s" class="page__taxonomy-item p-category">코딩애플, '코딩초보들이 헷갈리는 용어 : API가 뭐냐면'</a><span class="sep">&nbsp; </span>
     <a href="https://aws.amazon.com/ko/what-is/restful-api/" class="page__taxonomy-item p-category">aws, 'RESTful API란 무엇인가요?'</a>
 
   </span>

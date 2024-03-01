@@ -4,8 +4,7 @@ title: "[Java] Java의 특징"
 categories: Language
 tag: [Java, Java의 정석]
 ---
-Java의 정석 01장 정리(1)<br>
-아는 건 빼거나 대강 넘어가고, 기억 잘 못하는 재밌는 내용만 정리합니다.
+Java의 정석 01장 정리(1)
 
 # 이해하기
 
