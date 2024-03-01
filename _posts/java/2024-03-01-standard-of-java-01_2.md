@@ -136,3 +136,21 @@ JDK 9부터 모듈 시스템을 도입해 `jre` 디렉토리가 사라졌다고 
 &nbsp; Java의 정석에서는 클래스 라이브러리(Java API)라고 기재되어 있는데요.. 여기서 라이브러리와 API의 단어의 차이가 있는지 의문이 생겼습니다.
 와 얼마 안남았다고 생각했는데 JVM이랑 이거 뭐 어케해야 할지 의문이구만유
 
+---
+<p> 
+  <strong>👀 참고: </strong>
+  <span itemprop="keywords">
+    <a href="https://product.kyobobook.co.kr/detail/S000001550352" class="page__taxonomy-item p-category">남궁성, 'Java의 정석'</a>
+  </span>
+</p>
+<p> 
+  <strong>📑 목차: </strong>
+  <span itemprop="keywords">
+    <a href="/목차/standard-of-java" class="page__taxonomy-item p-category">Java의 정석 정리</a>
+  </span>
+</p>
+
+<nav class="pagination">
+<a href="/language/standard-of-java-01_1" class="pagination&#45;&#45;pager" title="{{ page.previous.title | markdownify | strip_html }}"> 👈 01장(1)</a>
+<a href="/language/standard-of-java-01_3" class="pagination&#45;&#45;pager" title="{{ page.previous.title | markdownify | strip_html }}"> 01장(3) 👉</a>
+</nav>

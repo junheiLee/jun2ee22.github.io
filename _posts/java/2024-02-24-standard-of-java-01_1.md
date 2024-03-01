@@ -143,6 +143,15 @@ CPU는 제한되어 있으니 야무지게 할당해야 효율적으로 사용�
 아는 건 안 쓰기로 해놓고 구구절절 다 적어서 세 개로 나눔.
 
 ---
+<p> 
+  <strong>👀 참고: </strong>
+  <span itemprop="keywords">
+    <a href="https://product.kyobobook.co.kr/detail/S000001550352" class="page__taxonomy-item p-category">남궁성, 'Java의 정석'</a><span class="sep">, </span>
+    <a href="https://chat.openai.com/" class="page__taxonomy-item p-category">godGPT</a>
+  </span>
+</p>
 
-**[참고]**  
-godGPT
+<nav class="pagination">
+<a href="/목차/standard-of-java" class="pagination&#45;&#45;pager" title="{{ page.previous.title | markdownify | strip_html }}"> 📑 목차</a>
+<a href="/language/standard-of-java-01_2" class="pagination&#45;&#45;pager" title="{{ page.previous.title | markdownify | strip_html }}"> 01장(2) 👉</a>
+</nav>
