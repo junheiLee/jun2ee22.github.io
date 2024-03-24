@@ -1,7 +1,7 @@
 # 안녕하세요!
 
-&nbsp;&nbsp; 제 블로그에 오신 여러분을 환영합니다!! 이곳에는 제가 공부했던 내용들이 조금씩 담겨있습니다.
+&nbsp;  주관적인 판단과 객관적인 사실을 분별하기 위해 지식을 쌓고자 합니다.<br>
+개발 지식을 머리에 꼭꼭 눌러 담기 위해 구구절절 작성하는 블로그.
 
-> 블로그 주소
 
-[https://junheiLee.github.io/](https://junheiLee.github.io/)
+> [https://junheiLee.github.io/](https://junheiLee.github.io/)
