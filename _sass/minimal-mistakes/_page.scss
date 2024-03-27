@@ -10,13 +10,13 @@
   padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 100%;
+  max-width: $my-width;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
-  @include breakpoint($x-large) {
-    max-width: $max-width;
-  }
+//   @include breakpoint($x-large) {
+//     max-width: max-width;
+//   }
 }
 
 body {
@@ -39,7 +39,7 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100%);
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: $right-sidebar-width;
   }
 
   @include breakpoint($x-large) {
@@ -52,7 +52,7 @@ body {
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
-    width: 90%;
+    width: 100%;
     clear: both;
 
     .page__content,
