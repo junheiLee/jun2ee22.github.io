@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Java] Java의 정석 목차"
-categories: 목차
+categories: category
 tag: [목차, Java, Java의 정석]
 ---
 아는 건 빼거나 대강 넘어가고, 기억 잘 못하는 재밌는 내용만 정리합니다.
