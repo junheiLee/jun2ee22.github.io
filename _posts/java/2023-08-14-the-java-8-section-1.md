@@ -1,10 +1,9 @@
 ---
 layout: single
 title: "자바 8(함수형 인터페이스와 람다)"
-tag: Java
-categories: chocolaggibbiddori
+categories: etc
 ---
-
+post by [chocolaggibbiddori](https://chocolaggibbiddori.github.io)
 <br>
 
 # 자바 8 주요 기능 1
@@ -278,4 +277,4 @@ ___
 **[참고]**  
 백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)
 
-[section 2 ==>](/chocolaggibbiddori/the-java-8-section-2)
+[section 2 ==>](/etc/the-java-8-section-2)

@@ -2,7 +2,7 @@
 layout: single
 title: "[Java] Java 개발 시작하기"
 categories: Language
-tag: [Java, Java의 정석]
+tag: [Java의 정석]
 ---
 Java의 정석 01장 정리(3)
 

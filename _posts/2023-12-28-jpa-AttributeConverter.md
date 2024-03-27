@@ -1,10 +1,12 @@
 ---
 layout: single
 title: "JPA - AttributeConverter"
-tag: jpa
-categories: chocolaggibbiddori
+tag: etc
+categories: etc
 ---
+post by [chocolaggibbiddori](https://chocolaggibbiddori.github.io)
 
+<br>
 # JPA의 AttributeConverter 인터페이스 사용법
 
 &nbsp;&nbsp; 프로젝트 진행 중 데이터를 암호화하여 저장해야하는 경우가 발생했다.

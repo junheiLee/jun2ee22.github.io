@@ -1,9 +1,11 @@
 ---
 layout: single
 title: "자바 8(Date/Time)"
-tag: Java
-categories: chocolaggibbiddori
+categories: etc
 ---
+post by [chocolaggibbiddori](https://chocolaggibbiddori.github.io)
+
+<br>
 
 # 자바 8 주요 기능 5
 
@@ -94,4 +96,4 @@ ___
 **[참고]**  
 백기선, inflearn 강의 ['더 자바, Java 8'](https://www.inflearn.com/course/the-java-java8/dashboard)  
 
-[<== section 4](/chocolaggibbiddori/the-java-8-section-4)
+[<== section 4](/etc/the-java-8-section-4)

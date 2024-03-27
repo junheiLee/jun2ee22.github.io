@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "[Network] REST API"
+title: "[HTTP] REST API"
 categories: CS
-tag: [Network, HTTP]
+tag: [Network]
 ---
 # Representational State Transfer Application Programming Interface
 

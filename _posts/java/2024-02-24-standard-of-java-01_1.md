@@ -2,7 +2,7 @@
 layout: single
 title: "[Java] Java의 특징"
 categories: Language
-tag: [Java, Java의 정석]
+tag: [Java의 정석]
 ---
 Java의 정석 01장 정리(1)
 

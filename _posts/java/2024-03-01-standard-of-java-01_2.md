@@ -2,7 +2,7 @@
 layout: single
 title: "[Java] 대략 JDK(실행 파일 + JRE(JVM + Java API))"
 categories: Language
-tag: [Java, Java의 정석]
+tag: [Java의 정석]
 ---
 Java의 정석 01장 정리(2)
 
