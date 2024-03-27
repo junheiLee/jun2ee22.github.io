@@ -12,24 +12,24 @@ tag: [Network, HTTP]
 
 
 ## REpresentational State Transfer?
-&nbsp;[🔗ORACLE](https://docs.oracle.com/database/apex-18.1/AEUTL/what-is-REST.htm#AEUTL29132)에서 다음과 같이 정의합니다.<br> 
+&nbsp; [🔗ORACLE](https://docs.oracle.com/database/apex-18.1/AEUTL/what-is-REST.htm#AEUTL29132)에서 다음과 같이 정의합니다.<br> 
 > a way of providing interoperability between computer systems on the Internet<br>
 *인터넷상에서 컴퓨터 시스템 간의 상호 운용성을 제공하는 방법*
  
-interoperablility: [🔗상호운용성](https://aws.amazon.com/ko/what-is/interoperability/) <br>
-이 단어를 위해 다음과 같은 집착을 합니다.
+interoperablility는 [🔗상호운용성](https://aws.amazon.com/ko/what-is/interoperability/) 이라고 번역하는데, 똑똑한 사람들이 단어를 위해 다음과 같은 집착을 합니다.
 - referer 오타지만 고치지 않음
 - charset 잘못 지은 이름이지만 고치지 않음
 - HTTP 상태 코드 418 포기함(i'm a teapot)
 - HTTP/0.9 아직도 지원함(크롬, 파이어폭스)
 
-nbsp;처음에는 상호운용성이라는 단어가 와닿지 않더라구요. 다음의 **등장 배경**을 보고 직관적으로 이해했습니다.<br>
+nbsp; 처음에는 상호운용성이라는 단어가 와닿지 않더라구요. 다음의 **등장 배경**을 보고 직관적으로 이해했습니다.<br>
+<br>
 
 ### 등장 배경
-&nbsp;Roy 씨가 HTTP 명세를 작성하는 당시, HTTP는 Word Wide Web(www)의 전송 프로토콜로 이용되고 있었다고 합니다.<br>
-&nbsp;HTTP를 제멋대로 고치면 이미 구축되어 있는 Web과 호환에 문제가 생길 것 같아요.<br>
+&nbsp; Roy 씨가 HTTP 명세를 작성하는 당시, HTTP는 Word Wide Web(www)의 전송 프로토콜로 이용되고 있었다고 합니다.<br>
+&nbsp; HTTP를 제멋대로 고치면 이미 구축되어 있는 Web과 호환에 문제가 생기죠.<br>
 <br>
-nbsp;따라서 다음과 같은 고민을 합니다.<br>
+nbsp; 따라서 다음과 같은 고민을 합니다.<br>
 
 ![@Schema](../../images/2024-01-30-http-restapi/why.PNG)<br>
 
@@ -39,18 +39,22 @@ nbsp;따라서 다음과 같은 고민을 합니다.<br>
 <br> <span style="color: #808080">*표현적인 상태 전송: 분산 하이퍼미디어 시스템(ex. web)을 위한 아키텍처 스타일*</span>
 
 &nbsp;이게 지금 그거는 아니고, 대학원생이었던 Roy 씨는 야무지게 정리해서 2년 후인<br>
+
 2000년, 지금의 `REST`라고 정의하는 논문을 발표합니다.
 > [🔗Architectural Styles and the Design of Network-based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 , Roy T. Fielding
 
 영어 잘하게 되면 이 논문을 읽어보겠습니다.<br>
+<br>
 
 ### REST
 ❗HTTP❗로 통신할 때, `상호운용성`을 제공하기 위해 나온 ❗아키텍처 스타일❗<br>
+<br>
 
 ## Application Programming Interface?
 &nbsp;고유한 기능을 가진 소프트웨어에서 구성 요소가 상호 간에 통신할 수 있도록 하는 메커니즘이라고 합니다.<br>
 정의는 언제나 어려운 것 같아요. [🔗코딩애플](https://www.youtube.com/watch?v=ckSdPNKM2pY&t=106s)에서는 메뉴판이라고 비유하는 데 직관적으로 이해됐어요.
+<br>
 
 ### 등장
 2000년, Salesforce API가 거의 최초로 공개된 API라고 합니다.
@@ -104,7 +108,7 @@ REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능�
 
 ## 등장
 
-&nbsp;2004년, flickr에서 여러가지 형태의 API가 나왔습니다.
+&nbsp; 2004년, flickr에서 여러가지 형태의 API가 나왔습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -130,23 +134,25 @@ REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능�
 
 &nbsp;하지만 변태가 아니라면 REST를 쓰고 싶잖아요.<br>
 그렇다면 REST API, 그러니까 REST라는 아키텍처 스타일을 만족하려면 어떻게 해야 할지 알아볼게요.
+<br>
 
 ## Rest 아키텍처 스타일 제약 조건
 &nbsp; 완벽할 수 없다는 것은 알지만 이왕 공부하는 거 완벽하게 하고 싶어요...<br>
 [🔗Joy씨의 논문](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1) CHAPTER 5.1에 해당하는 부분을 "제멋대로" 해석해 보겠습니다.<br>
 이 Chapter에서는 REST가 아키텍처 스타일로서 파생되는 과정을 따라가며 개요를 제공해줍니다.
+<br>
 
 ### 0. Null
-&nbsp;an empty set of constraint! 처음은 당연히 어떤 제약조건도 없습니다.<br>
+&nbsp; an empty set of constraint! 처음은 당연히 어떤 제약조건도 없습니다.<br>
 
 ![@Schema](../../images/2024-01-30-http-restapi/0.PNG)<br>
 
-&nbsp;<span style="color: #808080">다만 아키텍처를 설계할 때, 제약없이 요구 사항만 가지고 시작해서 점차적으로 시스템과 조화롭게 제약 조건을 적용했다고 합니다.
+&nbsp; <span style="color: #808080">다만 아키텍처를 설계할 때, 제약없이 요구 사항만 가지고 시작해서 점차적으로 시스템과 조화롭게 제약 조건을 적용했다고 합니다.
 이렇게 하면 시스템의 맥락에 대한 제약과 이해를 더 강조한다고 하네요. 
 마냥 구성 요소를 추가하는 것 보다는 당연히 제약이 강조되고, 그러다 보면 맥락이 이해가 되지 않을까요?</span><br>
 <br>
-**저는 바보라서 그냥 Null에서 시작한다고 알고 넘어가겠습니다.**
-
+**저는 바보라서 그냥 Null에서 시작한다고 알고 넘어가겠습니다.**<br>
+<br>
 
 ### 1. Client-Server
 &nbsp; 첫 번째로 추가된 이 녀석의 기본 원칙은 ❗관심사의 분리(Soc)❗ 입니다. <br>
@@ -159,7 +165,7 @@ REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능�
 
 &nbsp; <span style="color: #808080"> client는 trigger, server는 trigger에 따라 반응하는 process라고 Andrews 씨가 말했대요.
 생각해보면 client는 필요할 때만 방아쇠를 당기겠지만 server는 연신 돌아가고 있어야 하네요. 참고로 이 친구도 아키텍처 스타일이에요. </span><br>
-
+<br>
 
 ### 2. Stateless
 &nbsp; 다음으로 무상태를 추가합니다. 이 녀석은 서버에 상태가 없어야 한다는 제약이에요.<br>
@@ -168,10 +174,9 @@ REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능�
 
 ![@Schema](../../images/2024-01-30-http-restapi/2.PNG)<br>
 
-&nbsp; 이 아키텍처 스타일을 따르면 가시성, 신뢰성, 확장성을 향상할 수 있어요.<br>
-모든 정보가 들어있으니, 모니터링 시스템은 단일요청만 봐도 가시적으로 알 수 있겠죠?<br>
+&nbsp; 이 아키텍처 스타일을 따르면 가시성, 신뢰성, 확장성을 향상할 수 있어요. 모든 정보가 들어있으니, 모니터링 시스템은 단일요청만 봐도 가시적으로 알 수 있겠죠?<br>
 잘못된 부분이 있는 경우, 해당하는 부분만 고칠 수 있어요.
-예를 들어 서버1에서 장애가 발생하면, 서버2를 호출하면 돼요. 어차피 요청에 다 있잖아요.
+예를 들어 서버1에서 장애가 발생하면, 서버2를 호출하면 돼요. 어차피 요청에 다 있잖아요.<br>
 깨나 믿을 만하네요.<br>
 그리고, 서버를 한 100개 만들어도 같은 기능을 하면 되니까 수평 확장에 유리합니다.<br>
 
@@ -184,7 +189,7 @@ REST는 자원이나 객체에 초점을 맞추는 반면, 이 친구는 기능�
 김영한님은 점원을 서버로 예를 들어 주셨어요.
 stateless는 요청마다 모든 정보를 포함해서 중간에 점원이 바뀌어도 됩니다.<br>
 "노트북 얼마에요?" "만원이요." "하나 주세요" "뭐를요?" vs "노트북 얼마에요?" "만원이요.""노트북 두 개 주세요.""이만원~"</span><br>
-
+<br>
 
 ### 3. Cache
 &nbsp; 네트워크 성능 저하? cache 제약 조건을 추가해 네트워크의 효율성을 향상하겠습니다.<br>
@@ -210,8 +215,9 @@ stateless는 요청마다 모든 정보를 포함해서 중간에 점원이 바�
 하지만 개발자들은 깨나 빠릅니다. 논문을 작성하는 당시 2000년에 이미 초기 설계를 넘어섰어요.<br>
 요청은 응답을 동적으로 생성하는 서비스, 그러니까 동적 콘텐츠까지 식별할 수 있었습니다.<br>
 프록시와 공유 캐시 형태의 매개체(intermediary) 구성 요소에 대한 작업이 시작되었는데, 안정적으로 통신하려면 프로토콜의 확장이 필요했습니다.<br>
-어떻게 확장했길래 최신 웹 아키텍처를 형성할 수 있었는지 깨나 궁금하군요.<br>
-다음 장의 추가 제약 조건을 보겠습니다.</span>
+어떻게 확장했길래 최신 웹 아키텍처를 형성할 수 있었는지 깨나 궁금하군요.
+다음 장의 추가 제약 조건을 보겠습니다.</span><br>
+<br>
 
 ### 4. Uniform Interface
 &nbsp; 다른 네트워크 기반 스타일과 차별화되는 REST의 핵심 기능은
@@ -242,7 +248,7 @@ REST에서 정의한 4가지 인터페이스 제약 조건을 알아봅시다.
 <span style="color: #808080"> JSON의 경우 Link Header를 통해 구현 가능</span><br>
 
 &nbsp; <span style="color: #808080"> 여기서 3번 4번은 잘 지켜지지 않아서 Joy씨의 발작 버튼이 됩니다.</span><br>
-
+<br>
 
 ### 5. Layered System
 &nbsp; 인터넷 규모의 요구 사항이 깨나 방대해진 것 같아요.
@@ -265,7 +271,8 @@ REST에서 정의한 4가지 인터페이스 제약 조건을 알아봅시다.
 Layered System과 Uniform Interface 제약 조건 조합은 균일한 pipe-and-filter 패턴과 비슷한 아키텍처 특성을 유도합니다.
 REST 통신은 two-way지만, 하이퍼미디어 통신의 대규모 데이터 흐름은 각각 네트워크처럼 처리될 수 있습니다.
 뭔가 데이터 스트림마다 변환 필터를 적용할 수 있다고 하는데 떠오르는 게 딱히 없네용..
-</span>
+</span><br>
+<br>
 
 ### 6. code-on-demand(optional)
 &nbsp; 드디어 마지막 제약 조건이 추가됩니다. 특이하게도 이 녀석은 선택 사항이에요.<br>
@@ -284,6 +291,7 @@ REST 통신은 two-way지만, 하이퍼미디어 통신의 대규모 데이터 �
 제약 조건을 선택한다는 모순을 Joy씨가 추가로 설명해 주시는데 이것도 나중에 다시 봐야 할 것 같아요.
 해당 제약 조건을 선택했을 때, 일반적으로는 원하는 대로 설계할 수 있지만, 일부 상황에서는 비활성화될 수 있음을 이해해야 한다고 합니다~.
 </span><br>
+<br>
 
 ### 끗~
 &nbsp; 다음의 그림은 네트워크 기반의 아키텍처 스타일 용어로 REST의 제약 조건이 파생된 과정을 보여줍니다.<br>
