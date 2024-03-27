@@ -25,7 +25,7 @@
   ol {
     padding: 0;
     list-style: none;
-    font-size: 14px;
+    font-size: 16px;
 
     @include breakpoint($large) {
       float: right;
@@ -513,7 +513,7 @@
 
   .nav__title {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
@@ -530,10 +530,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: 13px;
+  font-size: 15px;
 
   @include breakpoint($large) {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   a {
