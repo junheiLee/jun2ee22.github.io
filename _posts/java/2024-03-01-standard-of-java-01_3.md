@@ -4,6 +4,16 @@ title: "[Java] Java 개발 시작하기"
 categories: Language
 tag: [Java의 정석]
 ---
+
+<style>
+.my-highlight {
+  background-color: #E2E2E2;
+  font-size: 18px;
+  font-weight: bord;
+}
+</style>
+
+
 Java의 정석 01장 정리(3)
 
 # 개발 시작
@@ -48,18 +58,94 @@ Java의 정석 01장 정리(3)
 
    명령 프롬프트에서 `java`, `javac` 명령어를 실행해도 되지만 귀찮으니 `java -version`으로 합니다.<BR><bR>
 
+<br>
 
-## 실행을 위한 기본 구조 
+## Java 소스 코드 작성
+&nbsp; 실행을 위한 Java 소스코드는 반드시 [클래스 형태](#-클래스-형태)로 작성해야 하며 최소 하나의 [entry point](#-entry-point)가 있어야 합니다.
+
+<br>
+
+### 클래스 형태
+&nbsp; 먼저 Java에서 모든 코드는 Class 안에 존재해야 합니다.
+
+```java
+package com.ljh;
+
+import com.ljh.OtherClass;
+
+public class ClassName {
+
+    public ClassName(){ // 기본 생성자
+    /* 참고로 요렇게 파라미터도 블록 내 구현도 없는 녀석을 기본 생성자라고 합니다.
+       생성자를 명시적으로 선언하지 않으면 Java 컴파일러가 자동으로 기본 생성자를 생성해줘요.
+       자동으로 생성해준다는 걸 꼭 기억해야 합니다!
+    */
+    }
+
+    public void methodName() { //메서드
+        OtherClass otherClass = new OtherClass();
+    }
+}
+```
+**<span class="my-highlight">package</span>**
+- 해당 소스 파일의 패키지를 선언합니다.
+  - <span style="color: #808080">Class 명을 이름(first name), 패키지를 성(family name)으로 비유해서 이해했습니다.</span>
+- 반드시 소스 파일의 최상단에 위치하며, 소스 파일이 위치한 디렉터리와 일치해야 합니다.
+- 명시하지 않을 시, default package에 포함됩니다. (다른 패키지에서 import 불가)<br>
+<br>
+
+**<span class="my-highlight">import</span>**
+- 소스 파일에 사용된 클래스의 패키지 정보를 컴파일러에게 제공합니다.
+  - 컴파일된 byte 코드에는 import 문에 해당하는 부분이 없습니다. 따라서 runtime에 참조나 로드에 사용하지 않습니다.
+  - <span style="color: #808080">다른 패키지의 class를 사용 시, 성(패키지)과 이름(Class 명)을 명시해야 하지만, `import`를 하면 이름만으로 사용할 수 있는 거죠.</span><br>
+<br>
+
+**<span class="my-highlight">public class</span>**
+- 하나의 소스 파일에 public class는 단 한개만 존재할 수 있습니다.<br>
+<br>
+
+**<span class="my-highlight">소스 파일 이름</span>**
+- public class가 있는 경우, public class와 대소문자까지 동일해야 합니다.
+- public class가 없는 경우, 포함된 class 중 하나를 선택합니다.
+  - 하나의 소스 파일에 여러 개의 class가 있으면 컴파일 시, 클래스마다 class 파일이 생성됩니다.<br>
+<br>
+
+### Entry Point(main method)
+&nbsp; Java 프로그램을 실행하기 위해서는 반드시 하나의 main method를 포함해야 합니다.<br>
+main method의 형식은 다음과 같습니다.
+
+```java
+public class MainClass {
+    public static void main(String[] args) {
+
+    }
+}
+```
+
+&nbsp; main method는 java.exe에 의해 호출되도록 미리 **약속**한 부분으로 프로그램의 시작점(Entry Point)입니다.
+main method를 포함한 class를 `java.exe`로 실행하면, JVM이 main method를 호출하는 거죠.
+
+따라서 반드시 main method의 선언은 형식과 일치해야 합니다.
 
 
+# 실행 과정
 
-## public class
+### 1. Compile
+&nbsp; 작성한 소스 파일을 JVM에서 실행할 수 있는 코드로 컴파일합니다.
+### 2. Load
+&nbsp; JVM이 프로그램 실행에 필요한 클래스(.class 파일)를 메모리에 로드합니다.
+이때, 클래스 로더를 사용하며 main method가 포함된 클래스가 첫 번째 대상이 됩니다.
+### 3. Link
+ &nbsp; JVM이 실행할 수 있는 형태로 준비합니다.
+### 4. 초기화
+&nbsp; 클래스가 사용되기 직전 static 키워드에 해당하는 녀석들을 초기화합니다.
+### 5. 실행
+&nbsp; 프로그램의 시작점인 main method가 실행됩니다.
 
-&nbsp; public class가 있는 경우, 소스 파일의 이름은 public class와 대소문자까지 동일해야 합니다.
-또한 하나의 소스 파일에 public class는 단 한 개만 존재할 수 있으며,
-public class가 없는 경우에는 소스 파일의 이름은 포함된 class 중 하나를 선택할 수 있습니다.
 
-&nbsp; 하나의 소스 파일에 여러 개의 class가 있으면 컴파일 시, 클래스 마다 class 파일이 생성됩니다.
+# &nbsp; 마무으리
+&nbsp; 실행 과정은 JVM 공부 하고, 보충하도록 하겠습니다!@!
+개인적으로 글씨가 작아야 예쁘다고 생각하지만, 가독성을 생각하면 크기를 키워야하나 싶어요,, 호호호
 
 ---
 <p> 
